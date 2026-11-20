@@ -1,0 +1,56 @@
+/* Pinterest Declutter
+ * content.js tags clutter with data-pd-hide="<feature>"; these rules hide it
+ * only while that feature's class (pd-f-<feature>) is on <html>.
+ * Extra direct selectors (no JS needed) are listed under each feature.
+ */
+
+/* ---------- left rail ---------- */
+html.pd-f-navExplore [data-pd-hide~="navExplore"],
+html.pd-f-navCreate [data-pd-hide~="navCreate"],
+html.pd-f-navNotifications [data-pd-hide~="navNotifications"],
+html.pd-f-navMessages [data-pd-hide~="navMessages"],
+html.pd-f-navSettings [data-pd-hide~="navSettings"] {
+  display: none !important;
+}
+
+/* ---------- home feed board tabs (home page only) ---------- */
+html.pd-f-boardTabs.pd-p-home [data-pd-hide~="boardTabs"] {
+  display: none !important;
+}
+
+/* ---------- promoted / ads ---------- */
+html.pd-f-promoted [data-pd-hide~="promoted"] {
+  display: none !important;
+}
+
+/* ---------- shopping ---------- */
+html.pd-f-shopping [data-pd-hide~="shopping"] {
+  display: none !important;
+}
+
+/* ---------- board suggestions (profile) ---------- */
+html.pd-f-boardSuggestions [data-pd-hide~="boardSuggestions"] {
+  display: none !important;
+}
+
+/* ---------- "Your saved ideas" title + account block ---------- */
+/* collapsed, not display:none: Pinterest's boards grid measures this header */
+html.pd-f-savedHeader [data-pd-hide~="savedHeader"] {
+  height: 0 !important; min-height: 0 !important; margin: 0 !important;
+  padding-top: 0 !important; padding-bottom: 0 !important;
+  overflow: hidden !important; visibility: hidden !important;
+}
+
+/* ---------- more ideas / related pins ---------- */
+/* related-pin cards on /pin/ pages are tagged one by one in content.js
+   (the pin you opened can sit inside the same grid, so no blanket rule) */
+html.pd-f-moreIdeas [data-pd-hide~="moreIdeas"] {
+  display: none !important;
+}
+
+/* ---------- pin titles + "..." under each card ---------- */
+html.pd-f-pinOverlays [data-pd-hide~="pinOverlays"],
+html.pd-f-pinOverlays [data-grid-item] [data-test-id*="pinrep-footer" i],
+html.pd-f-pinOverlays [data-grid-item] [data-test-id*="pin-footer" i] {
+  display: none !important;
+}

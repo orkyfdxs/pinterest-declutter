@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pinterest Declutter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="icons/icon32.png" alt="" width="20" height="20">
+      <span>Declutter</span>
+    </div>
+    <label class="switch big" title="Turn everything on/off">
+      <input type="checkbox" id="enabled">
+      <span class="slider"></span>
+    </label>
+  </header>
+  <p class="sub">Switched on = hidden. Changes apply instantly.</p>
+  <p id="status" class="status" hidden></p>
+  <main id="groups"></main>
+  <footer>
+    <button id="reset" type="button">Reset to defaults</button>
+  </footer>
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
