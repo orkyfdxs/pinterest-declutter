@@ -5,6 +5,18 @@ A small Manifest V3 extension for Brave and Chrome. It strips Pinterest down to 
 icons are hidden. You can flip each item on or off from the toolbar popup, and changes
 apply instantly with no page reload.
 
+## Result
+
+**Home feed:** just your pins. The left rail keeps only Home and Boards, and there are no
+ads or shopping pins.
+
+![Home feed with Pinterest Declutter](screenshots/home-feed.webp)
+
+**Your boards:** the "Your saved ideas" title and the account block are gone, so the
+boards start right under the search bar.
+
+![Boards page with Pinterest Declutter](screenshots/boards.webp)
+
 ## Install in Brave (load unpacked)
 
 1. Open `brave://extensions` (Chrome: `chrome://extensions`).
